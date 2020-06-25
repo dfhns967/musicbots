@@ -4,13 +4,12 @@
 const { Client, Collection } = require("discord.js");
 const { readdirSync } = require("fs");
 const { join } = require("path");
-const { TOKEN, PREFIX } = require("./config.json");
 
 const client = new Client({ disableMentions: "everyone" });
 
-client.login(TOKEN);
+client.login(procces.env.token);
 client.commands = new Collection();
-client.prefix = PREFIX;
+client.prefix = ch;
 client.queue = new Map();
 const cooldowns = new Collection();
 
