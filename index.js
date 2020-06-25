@@ -7,7 +7,7 @@ const { join } = require("path");
 
 const client = new Client({ disableMentions: "everyone" });
 
-client.login(procces.env.token);
+client.login(proccess.env.token);
 client.commands = new Collection();
 client.prefix = ch;
 client.queue = new Map();
