@@ -7,9 +7,9 @@ const { join } = require("path");
 const { TOKEN, PREFIX } = require("./config.json");
 const client = new Client({ disableMentions: "everyone" });
 
-client.login(Token);
+client.login(TOKEN);
 client.commands = new Collection();
-client.prefix = Prefix;
+client.prefix = PREFIX;
 client.queue = new Map();
 const cooldowns = new Collection();
 
