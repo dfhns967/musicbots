@@ -9,7 +9,7 @@ const client = new Client({ disableMentions: "everyone" });
 
 client.login(process.env.token);
 client.commands = new Collection();
-client.prefix = "ch";
+client.prefix(process.env.prefix);
 client.queue = new Map();
 const cooldowns = new Collection();
 
